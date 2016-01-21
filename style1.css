@@ -1,0 +1,21 @@
+#zen-intro,
+#zen-intro header {
+  display: block;
+  position: absolute;
+  width: 33.333333333333336%;
+  left: 0%;
+}
+#zen-intro .summary,
+#zen-supporting {
+  display: block;
+  position: absolute;
+  width: 33.333333333333336%;
+  left: 33.333333333333336%;
+}
+#zen-intro .preamble,
+aside.sidebar {
+  display: block;
+  position: absolute;
+  width: 33.333333333333336%;
+  left: 66.66666666666667%;
+}
