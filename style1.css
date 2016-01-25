@@ -1,3 +1,6 @@
+div {
+  border: 1px solid #000;
+}
 #zen-intro,
 #zen-intro header {
   display: block;
