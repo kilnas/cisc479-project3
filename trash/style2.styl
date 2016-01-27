@@ -1,0 +1,66 @@
+@import 'styles/load';
+@import 'styles/abstract/abstract.styl';
+
+// #zen-intro
+//   @extends $spacey;
+//   header
+//       font-size: 50px;
+//       font-family: "Helvetica", sans-serif;
+//     .summary
+//       font-size: 30px;
+//     .preamble
+//       font-size: 30px;
+// #zen-supporting
+//   @extends $spacey;
+// aside.sidebar
+//   @extends $spacey;
+//   .wrapper
+//     @extends $borderb;
+//     @extends $center-margin;
+//     div
+//       @extends $inline-block;
+//       width: 33%;
+//       height: 300px;
+//       vertical-align: top;
+//   li
+//     @extends $list-no-style;
+//     @extends $link-no-deco;
+
+ul
+  padding: 0;
+  
+body
+
+aside.sidebar
+  @extends $full-width
+  
+#zen-preamble
+  @extends $rounded-corner
+  background-color: blue;
+#zen-participation
+
+  
+
+#zen-resources
+    li
+      v-ladder-rung-block(80)
+      margin: 0 auto;
+#design-archives
+    li
+      v-ladder-rung-block(80)
+      margin: 0 auto;
+#design-selection
+    li
+      v-ladder-rung-block(80)
+      margin: 0 auto;
+.wrapper>div
+  h-train-car-inline(25%, 20, 20)
+ 
+// .sidebar>.wrapper>div
+//     li
+//       @extends $row;
+
+footer
+  @extends $nav-vert;
+  @extends $slant-left;
+
