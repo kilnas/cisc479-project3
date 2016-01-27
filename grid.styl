@@ -6,6 +6,7 @@
 square-width = 100;
 navheight = 250;
 grurple = #6d586d;
+ltpink = #ffd4dc
 
 body
   background-color: grurple;
@@ -19,9 +20,22 @@ body
     
   h1, h2, h3
     font-family: 'Pacifico', cursive;
-    
+  h3
+    color: ltpink;
+   
 .intro
   margin-top: unit(navheight, 'px')
+  @extends $banner
+
+.supporting
+  .explanation,.participation,.benefits,.requirements
+    @extends $half-width;
+    
+  .explanation, .benefits
+    float: left;
+  
+  .participation, .requirements
+    float: right;
 
 
 .sidebar>.wrapper
@@ -29,10 +43,14 @@ body
   div
     float: right;
     width: 20%;
-    //height: unit(navheight, 'px')
+    ul
+      li
+        a
+          text-decoration: none;
+          color:lightskyblue
 
   .design-resources
-    margin-right:0
+    float: left;
     
   .design-selection
     width: 100%
@@ -45,6 +63,7 @@ body
     
     h3
       text-align: center
+      color: grurple;
     nav
       ul
         @extends $nav-horiz

@@ -1,32 +1,52 @@
-div {
-  border: 1px solid #000;
-  border-radius: 10px;
-  margin: 10px;
+body h1 {
+  font-size: 300px;
+  line-height: 100px;
 }
-#zen-intro,
-#zen-intro header {
-  display: block;
-  position: absolute;
-  width: 33.333333333333336%;
-  left: 0%;
+body {
+  font-family: 'Helvetica', sans-serif;
+  padding: 30px;
 }
-#zen-intro .summary,
-#zen-supporting {
-  display: block;
-  position: absolute;
-  width: 33.333333333333336%;
-  left: 33.333333333333336%;
+h1 {
+  font-size: 4em;
+  margin: 0;
 }
-#zen-intro .preamble,
-aside.sidebar {
-  display: block;
-  position: absolute;
-  width: 33.333333333333336%;
-  left: 66.66666666666667%;
+h2 {
+  font-size: 3em;
+  margin: 0;
+}
+h3 {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1em;
 }
 div[role=presentation] {
   display: none;
 }
-#zen-intro {
-  margin: 50px;
+body,
+body h1 {
+  float: left;
+}
+body {
+  text-align: left;
+}
+body h1 {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 350px;
+}
+body {
+  font-size: 0.7em;
+  line-height: 1.1em;
+}
+body {
+  line-height: 0.7em;
+  height: 800px;
+}
+body div {
+  display: inline-block;
+  margin-right: 0px;
+  width: 30%;
+  vertical-align: top;
+  padding: 0px;
 }

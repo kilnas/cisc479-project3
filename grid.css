@@ -19,10 +19,28 @@ p {
 div[role=presentation] {
   display: none;
 }
+.intro,
 .sidebar>.wrapper,
 .sidebar>.wrapper .design-selection nav ul,
 footer {
   width: 100%;
+}
+.supporting .explanation,
+.supporting .participation,
+.supporting .benefits,
+.supporting .requirements {
+  width: 45%;
+  padding: 10px;
+}
+.intro {
+  text-align: center;
+}
+.intro {
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro {
+  padding: 10px;
 }
 body p>a,
 footer a {
@@ -71,7 +89,7 @@ footer a {
   -moz-background: linear-gradient(75deg, #ffc0cb, #fff);
   -ms-background: linear-gradient(75deg, #ffc0cb, #fff);
   background: linear-gradient(75deg, #ffc0cb, #fff);
-  padding: 10px;
+  padding: 8px;
   margin: 15px;
 }
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
@@ -88,15 +106,30 @@ body h2,
 body h3 {
   font-family: 'Pacifico', cursive;
 }
+body h3 {
+  color: #ffd4dc;
+}
 .intro {
   margin-top: 250px;
+}
+.supporting .explanation,
+.supporting .benefits {
+  float: left;
+}
+.supporting .participation,
+.supporting .requirements {
+  float: right;
 }
 .sidebar>.wrapper div {
   float: right;
   width: 20%;
 }
+.sidebar>.wrapper div ul li a {
+  text-decoration: none;
+  color: #87cefa;
+}
 .sidebar>.wrapper .design-resources {
-  margin-right: 0;
+  float: left;
 }
 .sidebar>.wrapper .design-selection {
   width: 100%;
@@ -112,6 +145,7 @@ body h3 {
 }
 .sidebar>.wrapper .design-selection h3 {
   text-align: center;
+  color: #6d586d;
 }
 .sidebar>.wrapper .design-selection nav ul li {
   color: #6d586d;
