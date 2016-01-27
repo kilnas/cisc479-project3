@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Dynalight')
+@import 'styles/load';
+
+
+
+body{
+  @extends $emo-background;
+  
+}
+.page-wrapper{
+  @extends $transparent-darkness;
+  @extends $hot-pink;
+  @extends $emo-text;
+}
+  
+#zen-intro
+  @extends $spacey;
+  font-family: Verdana;
+  font-size: 20px;
+  header
+      @extends $profile-pic;
+      setFillColor(green);
+    .summary
+      font-size: 30px;
+    .preamble
+      font-size: 30px;
+#zen-supporting
+  @extends $spacey;
+  @extends $right;
+  
+p::after{
+  fontcontent("x3", "Comic Sans MS", cursive);
+}
+
+aside.sidebar
+  @extends $spacey;
+li
+  @extends $list-no-style;
+  a
+    color: green;
+
+
+#zen-supporting, .wrapper{
+  @extends $transparent-darkness;
+}
+
+.wrapper>div{
+  @extends $inline-block-float;
+  width: 33%
+}
+
+
+
+
+.main-supporting>div{
+  @extends $inline-block-float;
+}

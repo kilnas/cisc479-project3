@@ -1,0 +1,57 @@
+$emo-background{
+    background-image: url("../../images/emo.jpg");
+}
+
+$emo-text{
+    font-family: 'Dynalight', cursive;
+}
+
+stripe(evenColor oddColor) 
+     //for all children...
+     background-color oddColor
+     //for every even child...
+     &:nth-child(even)
+       background-color evenColor
+
+
+fontcontent(content, font-fam, backup)
+    //div::after
+    content: content;
+    font-family: font-fam, backup
+    
+    
+//-------------------------------------- NEU STUFF ------------------------- 
+
+gradient(angle, color1, color2)
+   vendorize(background, linear-gradient(angle, color1, color2));
+   
+$grid-background{ //base from CSS3 Pattern Gallery
+    background-color: white;
+    background-image: linear-gradient(#299BC1 2px, transparent 2px),
+    linear-gradient(90deg, #299BC1 2px, transparent 2px),
+    linear-gradient(rgba(41,155,193,.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(41,155,193,.3) 1px, transparent 1px);
+    background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+}
+
+$linepaper-background{ //base from CSS3 Pattern Gallery
+   background-color: #fff; 
+    background-image: 
+    linear-gradient(90deg, transparent 89px, #F04345 89px, #F04345 91px, transparent 91px),
+    linear-gradient(#299BC1 .1em, transparent .1em);
+    background-size: 100% 1.2em;
+}
+
+$picnic-happy{ //from CSS3 Pattern Gallery
+    background-color:white;
+    background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
+    linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
+    background-size:50px 50px;
+}
+
+
+
+        
+
+        

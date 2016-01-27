@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Molle:400italic');
+@import 'styles/load';
+@import 'styles/abstract/abstract.styl';
+
+darkpurple=rgb(48,16,40);
+
+body
+  //font-family: 'Meie Script', cursive;
+  color: maroon
+  a
+    color:#5baef4
+
+
+  h1, h2, h3
+    font-family: 'Molle';
+
+.page-wrapper
+  @extends $three-quarter-width
+  @extends $center-margin
+  gradient(180deg, #ffcc99, purple);
+  padding: 50%;
+  
+
+#zen-intro
+  @extends $full-width
+  
+  header
+    @extends $quarter-width
+    @extends $center-margin;
+    //line-height: 50px;
+    @extends $clear
+    squarify(550);
+    @extends $oval
+    gradient(180deg, orange, red);
+    
+    >h1
+      padding: 35%;
+   
+  .summary
+    //@extends $banner
+    @extends $oval
+    width: 75%;
+    padding: 50px;
+    background-color: white;
+    color: darksalmon;
+    margin-top: -10%;
+    
+.explanation, .participation
+    background-color:transwhite;
+    height: 450px;
+    @extends $rounded-corner
+    h-train-car-inline(45, 10, 10)
+
+.preamble
+  margin-bottom: 10%;
+
+.preamble >h3, .benefits >h3, .requirements>h3
+    @extends $oval
+    padding: 50px;
+    width: 30%;
+    background-color: white;
+    
+.benefits
+  @extends $half-width;
+  
+.requirements 
+  color: darkpurple;
+  //@extends $right;
+  @extends $three-quarter-width
+  float: right;
+  a
+    color: navy;
+
+.participation
+  float:right
+
+//#zen-supporting
+  
+//  > div > p
+//    stripe(red, white)
+
+aside.sidebar
+  @extends $full-width
+  @extends $text-center
+  background-color: darkness;
+  @extends $rounded-corner
+  clear: both
+  height: 700px;
+  a
+    color: navy;
+  
+  ul
+    padding: 0px //lets list items be centered
+    @extends $nav-vert
+    @extends $center-margin
+    li
+      @extends $rounded-corner
+      background-color: #ffcc99;
+      
+    
+#zen-resources
+
+
+#design-archives
+
+
+#design-selection
+
+.sidebar>.wrapper>div
+  h-train-car-inline(20, 70, 20)

@@ -1,0 +1,37 @@
+transwhite=rgba(255,255,255, .5);
+darkness=rgba(0,0,0, .7);
+hot-pink= #EF1C67;
+
+$transparent-white{
+    background-color: transwhite;
+    margin: 50px;
+}
+
+$transparent-darkness{
+    background-color: darkness;
+    margin: 50px;
+}
+
+$hot-pink{
+    color: hot-pink;
+}
+
+$borderb{
+    border: 2px solid black;
+    padding: 5px;
+}
+
+$blind{
+    font-size: 80px;
+}
+
+padding(n){
+    padding: n px;
+}
+
+//shortcut to apply web-prefixes
+vendorize(property, value)
+    -webkit-{property} value
+    -moz-{property} value
+    -ms-{property} value
+    {property} value

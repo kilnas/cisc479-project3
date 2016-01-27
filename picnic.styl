@@ -1,0 +1,50 @@
+@import 'styles/load';
+@import 'styles/abstract/abstract.styl';
+
+
+ul
+  padding: 0;
+  
+body
+  gradient(0deg, #003b72, #67cbf2);
+  padding: 60px;
+
+aside.sidebar
+  @extends $full-width
+  
+#zen-preamble
+
+#zen-participation
+
+header
+  @extends $profile-pic;
+  @extends $clear;
+  
+#zen-supporting
+  @extends $full-width;
+
+#zen-resources
+    li
+      v-ladder-rung-block(80)
+      background-color: green;
+      squarify(200px);
+      @extends $oval;
+      @extends $borderb;
+      border-color: #79BAF6;
+      @extends $slant-left;
+      @extends $right;
+#design-archives
+    li
+      v-ladder-rung-block(80)
+#design-selection
+    li
+      v-ladder-rung-block(80)
+      margin: 0 auto;
+.wrapper>div
+  h-train-car-inline(25%, 20, 20)
+ 
+
+footer
+  @extends $nav-vert;
+  @extends $slant-left;
+

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import 'styles/load';
+@import 'styles/abstract/abstract.styl';
+
+
+h3{
+  font-family: 'Shadows Into Light'
+}
+
+ul
+  padding: 0;
+  
+body
+  @extends $linepaper-background;
+  padding: 100px;
+
+aside.sidebar
+  @extends $full-width
+  
+#zen-preamble
+
+#zen-participation
+  
+
+#design-archives, #design-selection, #zen-resources
+  @extends $folded-corner;
+
+
+
+.wrapper>div
+  h-train-car-inline(25%, 20, 20)
+ 
+// .sidebar>.wrapper>div
+//     li
+//       @extends $row;
+
+footer
+  @extends $nav-vert;
+  @extends $slant-left;
+

@@ -1,0 +1,150 @@
+$list-no-style{
+    list-style-type: none;
+}
+
+$link-no-deco{
+    text-decoration: none;
+}
+
+$profile-pic{
+  @extends $left;
+  margin-bottom: 20px;
+  margin-right:20px;
+  width: 350px;
+  
+  
+}
+
+$inline-block{
+  display: inline-block;
+}
+
+
+
+
+    
+    
+//----------------------------NEU STUFF------------------------------------------
+
+squarify(w){
+    width: unit(w,px);
+    height: unit(w,px);
+}
+
+$oval
+    border-radius: 50%;
+    text-align: center;
+    @extends $text-center;
+    vertical-align: middle;
+    padding: 10px;
+    //note: use squarify to make a circle
+    //  > p, h1, h2, h3, ul
+$rounded-corner{
+    border-radius: 10 px;
+    padding: 10px;
+}
+
+$tear{
+
+}
+
+$nav-vert
+    float: left;
+    m = 5px
+    p = 10px
+    list-style: none;
+    
+    >a, >li
+        display: block
+        margin-bottom: m
+        background-color: orange
+        padding: p;
+        text-align: left;
+        text-decoration: none;
+        color: white
+        &:hover
+            background-color: green;
+
+        
+   
+    //a:nth-child(1), li:nth-child(1) //special stuff for end bits
+$nav-horiz
+    @extends $full-width
+    m = 5px
+    p = 10px
+    list-style: none;
+    
+    a, li
+        display: inline-block
+        margin-left: m
+        background-color: orange
+        padding: p;
+        width: 10%;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 10 px;
+        &:hover
+            background-color: green;
+        
+   
+     a:nth-child(1), li:nth-child(1) //special stuff for end bits
+        margin-left: 0px
+
+$folded-corner
+    position: relative;
+    background: pink; /* Fallback */
+    background: linear-gradient(-150deg, transparent 1.5em, pink 0);
+    padding: 2em;
+    color: white;
+    border-radius: .5em;
+    box-shadow: 0px 15px 10px -3px rgba(0,0,0,.5);
+    &::before
+        content: ' ';
+        position: absolute;
+        width: 1.73em; height: 3em;
+        top: 0; right: 0;
+        background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) 100% 0 no-repeat;
+        transform: translateY(-1.3em) rotate(-30deg);
+        transform-origin: bottom right;
+        border-bottom-left-radius: .5em;
+        box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15)
+        
+$slant-left{
+    vendorize(transform,rotate(-10deg));
+
+}
+
+$slant-right{
+    vendorize(transform,rotate(10deg));
+
+}
+
+
+
+$title{
+    font-size: 4em;
+}
+
+$subtitle{
+    font-size: 2em;
+}
+
+$teeny{
+    font-size: .4em;
+}
+
+$regular{
+    font-size: 1em;
+}
+
+$huge{
+    font-size: 5em;
+}
+
+
+
+
+
+
+

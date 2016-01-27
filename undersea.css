@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One");
+@import url("https://fonts.googleapis.com/css?family=Just+Another+Hand");
+@import url("https://fonts.googleapis.com/css?family=Calligraffitti");
+#zen-resources li,
+footer >a {
+  border: 2px solid #000;
+  padding: 5px;
+}
+body {
+  font-family: 'Helvetica', sans-serif;
+  padding: 30px;
+}
+h1 {
+  font-size: 4em;
+  margin: 0;
+}
+h2 {
+  font-size: 3em;
+}
+h3 {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1em;
+}
+div[role=presentation] {
+  display: none;
+}
+#zen-supporting,
+aside.sidebar {
+  width: 100%;
+}
+header,
+#zen-participation p:nth-child(even),
+#zen-requirements p:nth-child(odd),
+#zen-explanation p:nth-child(odd),
+footer >a:nth-child(even) {
+  float: left;
+}
+#zen-preamble,
+#zen-participation,
+#zen-participation p:nth-child(odd),
+#zen-requirements p:nth-child(even),
+#zen-explanation p:nth-child(even),
+footer >a:nth-child(odd) {
+  float: right;
+}
+#zen-summary,
+#zen-participation p:nth-child(odd),
+#zen-participation p:nth-child(even),
+#zen-requirements p:nth-child(odd),
+#zen-explanation p:nth-child(odd),
+#zen-requirements p:nth-child(even),
+#zen-explanation p:nth-child(even),
+#zen-supporting,
+.wrapper,
+footer >a:nth-child(odd),
+footer >a:nth-child(even) {
+  clear: both;
+}
+#zen-preamble,
+#zen-benefits,
+#zen-participation p,
+#zen-requirements p,
+#zen-explanation p,
+footer >a {
+  text-align: center;
+}
+#zen-resources li,
+#design-archives li,
+#design-selection li {
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 350px;
+}
+#zen-preamble,
+#zen-benefits,
+#zen-participation p,
+#zen-requirements p,
+#zen-explanation p,
+footer >a {
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
+.wrapper,
+.wrapper >div {
+  border-radius: 10px;
+  padding: 10px;
+}
+footer {
+  float: left;
+  list-style: none;
+}
+footer >a,
+footer >li {
+  display: block;
+  margin-bottom: 5px;
+  background-color: #ffa500;
+  padding: 10px;
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+}
+footer >a:hover,
+footer >li:hover {
+  background-color: #008000;
+}
+#zen-resources li,
+#design-archives li,
+footer {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+#design-selection li {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+h2,
+#zen-supporting h3 {
+  font-size: 2em;
+}
+p,
+#zen-participation p,
+#zen-requirements p,
+#zen-explanation p {
+  font-size: 1em;
+}
+h1 {
+  font-size: 5em;
+}
+#zen-resources li,
+footer >a {
+  border: 2px solid #000;
+  padding: 5px;
+}
+a {
+  color: #ff7f50;
+}
+ul {
+  padding: 0px;
+}
+body {
+  -webkit-background: linear-gradient(0deg, #003b72, #67cbf2);
+  -moz-background: linear-gradient(0deg, #003b72, #67cbf2);
+  -ms-background: linear-gradient(0deg, #003b72, #67cbf2);
+  background: linear-gradient(0deg, #003b72, #67cbf2);
+  padding: 60px;
+}
+h2 {
+  font-family: 'Calligraffitti';
+}
+h1,
+h3 {
+  font-family: 'Fredoka One';
+}
+p {
+  font-family: 'Century Gothic';
+}
+#zen-preamble,
+#zen-benefits {
+  width: 350px;
+  height: 350px;
+  background: #fff;
+  padding: 50px;
+}
+#zen-participation {
+  display: inline-block;
+  margin-right: 10px;
+  width: 50%;
+  vertical-align: top;
+  padding: 10px;
+  margin-top: 70px;
+  background: none;
+}
+#zen-participation p {
+  width: 230px;
+  height: 230px;
+  background: #fff;
+  padding: 70px;
+}
+#zen-requirements,
+#zen-explanation {
+  display: inline-block;
+  margin-right: 5px;
+  width: 60%;
+  vertical-align: top;
+  padding: 10px;
+  background: none;
+}
+#zen-requirements p,
+#zen-explanation p {
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  padding: 70px;
+}
+aside.sidebar h3,
+aside.sidebar li {
+  color: #fff5ee;
+}
+#zen-resources li {
+  display: block;
+  background-Color: #ffc0cb;
+  margin-bottom: 10px;
+  width: 80%;
+  list-style: none;
+  border-color: #79baf6;
+  background-color: #2e8b57;
+}
+#design-archives li {
+  display: block;
+  background-Color: #ffc0cb;
+  margin-bottom: 10px;
+  width: 80%;
+  list-style: none;
+  background-color: #2e8b57;
+}
+#design-selection li {
+  display: block;
+  background-Color: #ffc0cb;
+  margin-bottom: 10px;
+  width: 80%;
+  list-style: none;
+  background-color: #2e8b57;
+}
+.wrapper {
+  background-color: BurlyWood;
+}
+.wrapper >div {
+  display: inline-block;
+  margin-right: 20px;
+  width: 25%;
+  vertical-align: top;
+  padding: 20px;
+}
+footer {
+  width: 80px;
+  font-family: 'Calligraffitti';
+  font-size: regular;
+}
+footer >a {
+  width: 30px;
+  height: 30px;
+  background-color: #fff5ee;
+  color: #ff7f50;
+  border-color: #003b72;
+}

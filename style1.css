@@ -1,5 +1,7 @@
 div {
   border: 1px solid #000;
+  border-radius: 10px;
+  margin: 10px;
 }
 #zen-intro,
 #zen-intro header {
@@ -21,4 +23,10 @@ aside.sidebar {
   position: absolute;
   width: 33.333333333333336%;
   left: 66.66666666666667%;
+}
+div[role=presentation] {
+  display: none;
+}
+#zen-intro {
+  margin: 50px;
 }

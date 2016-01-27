@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
+@import 'styles/load';
+@import 'styles/abstract/abstract.styl';
+
+
+deepblue = #003b72;
+shallowblue = #67cbf2;
+
+a
+  color: coral;
+ul
+  padding: 0;
+  
+body
+  gradient(0deg, deepblue, shallowblue);
+  padding: 60px;
+  
+h1
+  @extends $huge;
+h2
+  font-family: 'Calligraffitti';
+  @extends $subtitle;
+h1, h3
+  font-family: 'Fredoka One';
+  
+p
+  font-family: 'Century Gothic';
+  @extends $regular;
+  
+
+header
+  @extends $profile-pic;
+
+
+#zen-summary
+  @extends $clear;
+  
+  
+
+  
+#zen-preamble, #zen-benefits
+  @extends $oval;
+  squarify(350px);
+  background: white;
+  padding: 50px;
+  
+#zen-preamble
+  @extends $right;
+  
+
+#zen-participation
+  h-train-car-inline(50%, 10, 10);
+  margin-top: 70px;
+  background: none;
+  @extends $right;
+  p
+    @extends $oval;
+    squarify(230px);
+    background: white;
+    padding: 70px;
+    @extends $regular;
+    &:nth-child(odd)
+      @extends $right;
+      @extends $clear;
+    &:nth-child(even)
+      @extends $left;
+      @extends $clear;
+      
+
+      
+#zen-requirements, #zen-explanation
+  h-train-car-inline(60%, 5, 10);
+  background: none;
+  
+  p
+    @extends $oval;
+    squarify(250px);
+    background: white;
+    padding: 70px;
+    @extends $regular;
+    &:nth-child(odd)
+      @extends $left;
+      @extends $clear;
+    &:nth-child(even)
+      @extends $right;
+      @extends $clear;
+    
+    
+
+  
+#zen-supporting
+  @extends $full-width;
+  @extends $clear;
+  h3
+    @extends $subtitle;
+
+
+aside.sidebar
+  @extends $full-width
+  h3, li
+    color: seashell
+
+#zen-resources
+    li
+      v-ladder-rung-block(80)
+      @extends $borderb;
+      border-color: #79BAF6;
+      @extends $slant-left;
+      background-color: seagreen;
+      @extends $center-margin;
+#design-archives
+    li
+      v-ladder-rung-block(80)
+      background-color: seagreen;
+      @extends $center-margin
+      @extends $slant-left;
+#design-selection
+    li
+      v-ladder-rung-block(80)
+      background-color: seagreen;
+      @extends $center-margin;
+      @extends $slant-right;
+.wrapper
+  @extends $rounded-corner;
+  background-color: BurlyWood;
+  @extends $clear;
+  
+  >div
+    h-train-car-inline(25%, 20, 20)
+    @extends $rounded-corner;
+    
+  
+
+ 
+
+footer
+  @extends $nav-vert;
+  @extends $slant-left;
+  width: 80px;
+  font-family: 'Calligraffitti';
+  font-size: regular;
+  >a
+    squarify(30px)
+    @extends $oval;
+    @extends $text-center;
+    background-color: seashell;
+    color: coral;
+    @extends $borderb;
+    border-color: deepblue;
+    &:nth-child(odd)
+      @extends $right;
+      @extends $clear;
+    &:nth-child(even)
+      @extends $left;
+      @extends $clear;
