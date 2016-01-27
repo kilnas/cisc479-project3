@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+@import url("https://fonts.googleapis.com/css?family=Homemade+Apple");
+@import url("https://fonts.googleapis.com/css?family=Kalam:400,700");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+#zen-benefits,
+footer >a {
+  border: 2px solid #000;
+  padding: 5px;
+}
 body {
   font-family: 'Helvetica', sans-serif;
   padding: 30px;
@@ -9,6 +17,7 @@ h1 {
 }
 h2 {
   font-size: 3em;
+  margin: 0;
 }
 h3 {
   font-size: 1.5em;
@@ -19,8 +28,39 @@ p {
 div[role=presentation] {
   display: none;
 }
-aside.sidebar {
+#zen-preamble {
   width: 100%;
+}
+header {
+  float: left;
+}
+#zen-summary,
+#zen-requirements p:last-child {
+  float: right;
+}
+#zen-preamble {
+  clear: both;
+}
+#zen-preamble h3,
+#zen-explanation,
+#zen-benefits,
+#zen-requirements p:last-child,
+footer >a {
+  text-align: center;
+}
+#zen-explanation p,
+#design-archives li,
+#design-selection li,
+#zen-resources li {
+  margin-left: auto;
+  margin-right: auto;
+}
+#zen-benefits,
+footer >a {
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
 }
 footer {
   float: left;
@@ -40,8 +80,146 @@ footer >a:hover,
 footer >li:hover {
   background-color: #008000;
 }
-#zen-preamble,
-#zen-participation,
+#zen-summary,
+#zen-explanation p:nth-child(odd),
+#zen-resources,
+footer {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+#zen-explanation h3,
+#zen-benefits,
+#design-selection {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+#zen-summary {
+  box-shadow: 0px 10px 10px -1px rgba(0,0,0,0.5);
+}
+h2 {
+  font-size: 2em;
+}
+#zen-requirements p:last-child {
+  font-size: 0.7em;
+  line-height: 1.1em;
+}
+p {
+  font-size: 1.2em;
+}
+h1 {
+  font-size: 5em;
+}
+#zen-summary {
+  background-color: #fff;
+  background-image: linear-gradient(#299bc1 2px, transparent 2px), linear-gradient(90deg, #299bc1 2px, transparent 2px), linear-gradient(rgba(41,155,193,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(41,155,193,0.3) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+body {
+  background-color: #fff;
+  background-image: linear-gradient(90deg, transparent 89px, #f04345 89px, #f04345 91px, transparent 91px), linear-gradient(#299bc1 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+}
+#zen-benefits,
+footer >a {
+  border: 2px solid #000;
+  padding: 5px;
+}
+h1 {
+  font-family: 'Permanent Marker';
+  text-decoration: underline;
+}
+h2 {
+  font-family: 'Homemade Apple';
+}
+a {
+  text-decoration: none;
+  color: #000080;
+}
+p,
+h3 {
+  font-family: 'Kalam';
+}
+p {
+  line-height: 1em;
+}
+p a {
+  background-color: #ff0;
+}
+ul {
+  padding: 0px;
+}
+body {
+  padding: 100px;
+}
+#zen-summary {
+  background-color: #fff8dc;
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  margin-right: 30px;
+  width: 25%;
+  vertical-align: top;
+  padding: 10px;
+}
+#zen-preamble h3 {
+  text-transform: uppercase;
+  font-family: 'Kalam';
+}
+.wrapper>div {
+  display: inline-block;
+  margin-right: 20px;
+  width: 27%;
+  vertical-align: top;
+  padding: 20px;
+}
+#zen-explanation p {
+  display: inline-block;
+  margin-right: 50px;
+  width: 40%;
+  vertical-align: top;
+  padding: 0px;
+}
+#zen-participation {
+  display: inline-block;
+  margin-right: 20px;
+  width: 40%;
+  vertical-align: top;
+  padding: 5px;
+}
+#zen-participation p {
+  display: block;
+  background-Color: #ffc0cb;
+  margin-bottom: 10px;
+  width: 100%;
+  list-style: none;
+  background: #e0ffff;
+}
+#zen-benefits {
+  display: inline-block;
+  margin-right: 20px;
+  width: 45%;
+  vertical-align: top;
+  padding: 5px;
+  border-color: #f00;
+}
+#zen-benefits p {
+  display: block;
+  background-Color: #ffc0cb;
+  margin-bottom: 10px;
+  width: 100%;
+  list-style: none;
+  background: none;
+}
+#zen-requirements p:last-child {
+  width: 200px;
+  height: 200px;
+  padding-top: 0px;
+}
 #design-archives,
 #design-selection,
 #zen-resources {
@@ -50,12 +228,14 @@ footer >li:hover {
 /* Fallback */
   background: linear-gradient(-150deg, transparent 1.5em, #ffc0cb 0);
   padding: 2px;
-  color: #fff;
+  color: #000;
   border-radius: 0.5em;
   box-shadow: 0px 15px 10px -3px rgba(0,0,0,0.5);
+  width: 300px;
+  height: 300px;
+  color: #000;
+  padding: 10px;
 }
-#zen-preamble::before,
-#zen-participation::before,
 #design-archives::before,
 #design-selection::before,
 #zen-resources::before {
@@ -71,30 +251,40 @@ footer >li:hover {
   border-bottom-left-radius: 0.5em;
   box-shadow: -0.2em 0.2em 0.3em -0.1em rgba(0,0,0,0.15);
 }
-footer {
-  -webkit-transform: rotate(-10deg);
-  -moz-transform: rotate(-10deg);
-  -ms-transform: rotate(-10deg);
-  transform: rotate(-10deg);
-}
-body {
-  background-color: #fff;
-  background-image: linear-gradient(90deg, transparent 89px, #f04345 89px, #f04345 91px, transparent 91px), linear-gradient(#299bc1 0.1em, transparent 0.1em);
-  background-size: 100% 1.2em;
-}
-h3 {
+#design-archives li,
+#design-selection li,
+#zen-resources li {
+  margin-left: 20px;
   font-family: 'Shadows Into Light';
 }
-ul {
-  padding: 0px;
+#zen-resources {
+  position: relative;
+  background: #add8e6;
+/* Fallback */
+  background: linear-gradient(-150deg, transparent 1.5em, #add8e6 0);
+  padding: 2px;
+  color: #000;
+  border-radius: 0.5em;
+  box-shadow: 0px 15px 10px -3px rgba(0,0,0,0.5);
 }
-body {
-  padding: 100px;
+#zen-resources::before {
+  content: ' ';
+  position: absolute;
+  width: 1.73em;
+  height: 3em;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,0.2) 0, rgba(0,0,0,0.4)) 100% 0 no-repeat;
+  transform: translateY(-1.3em) rotate(-30deg);
+  transform-origin: bottom right;
+  border-bottom-left-radius: 0.5em;
+  box-shadow: -0.2em 0.2em 0.3em -0.1em rgba(0,0,0,0.15);
 }
-.wrapper>div {
-  display: inline-block;
-  margin-right: 20px;
-  width: 25%;
-  vertical-align: top;
-  padding: 20px;
+footer {
+  font-family: 'Permanent Marker';
+}
+footer >a {
+  background: none;
+  background-color: none;
+  color: #f00;
 }

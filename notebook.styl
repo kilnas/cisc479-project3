@@ -1,11 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+@import url('https://fonts.googleapis.com/css?family=Kalam:400,700');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 @import 'styles/load';
 @import 'styles/abstract/abstract.styl';
 
 
-h3{
-  font-family: 'Shadows Into Light'
+h1{
+  font-family: 'Permanent Marker'
+  text-decoration: underline;
+  @extends $huge
 }
+
+h2{
+  font-family: 'Homemade Apple'
+  @extends $subtitle
+  
+}
+
+
+
+a
+  text-decoration: none;
+  color: navy
+  
+  
+p, h3{
+  font-family: 'Kalam'
+}
+
+p
+  @extends $regular-big
+  line-height: 1em;
+  a
+    background-color: yellow;
 
 ul
   padding: 0;
@@ -13,28 +41,90 @@ ul
 body
   @extends $linepaper-background;
   padding: 100px;
-
-aside.sidebar
-  @extends $full-width
+  
+header
+  @extends $left;
+  
+#zen-summary
+  background-color: cornsilk
+  @extends $shadow
+  @extends $grid-background;
+  @extends $right
+  squarify(250px)
+  h-train-car-inline(25,30,10)
+  @extends $slant-left
   
 #zen-preamble
-
-#zen-participation
-  
-
-#design-archives, #design-selection, #zen-resources
-  @extends $folded-corner;
-
-
-
+  @extends $clear;
+  @extends $full-width;
+  h3
+    text-transform: uppercase;
+    @extends $text-center
+    font-family: 'Kalam'
 .wrapper>div
-  h-train-car-inline(25%, 20, 20)
- 
-// .sidebar>.wrapper>div
-//     li
-//       @extends $row;
+  h-train-car-inline(27%, 20, 20)
 
+#zen-explanation
+  h3
+    @extends $slant-right
+  @extends $text-center
+  p
+    h-train-car-inline(40,50,0)
+    @extends $center-margin
+    &:nth-child(odd)
+      @extends $slant-left;
+    
+    
+#zen-participation
+  h-train-car-inline(40, 20, 5)
+  p
+    v-ladder-rung-block(100)
+    background: lightcyan
+    
+#zen-benefits
+  h-train-car-inline(45, 20, 5)
+  @extends $oval
+  @extends $borderb
+  border-color: red;
+  @extends $slant-right
+  p
+    v-ladder-rung-block(100)
+    background: none;
+
+#zen-requirements
+  p
+    &:last-child
+      squarify(200px)
+      @extends $text-center
+      padding-top: 0px
+      @extends $teeny
+      @extends $right
+      
+#design-archives, #design-selection, #zen-resources
+  folded-corner(pink);
+  squarify(300px)
+  color: black;
+  padding: 10px;
+  li
+    //list-style-type:none;
+    margin-left: 20px;
+    @extends $center-margin;
+    font-family: 'Shadows Into Light'
+    
+
+#zen-resources
+  @extends $slant-left;
+  //background: lightblue
+  folded-corner(lightblue);
+#design-selection
+  @extends $slant-right;
 footer
   @extends $nav-vert;
+  font-family: 'Permanent Marker';
   @extends $slant-left;
-
+  >a
+    background: none;
+    background-color: none;
+    @extends $borderb;
+    @extends $oval;
+    color: red;

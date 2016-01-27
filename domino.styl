@@ -1,0 +1,152 @@
+//note: import fonts before loading styles
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Alegreya+Sans+SC:400,700');
+@import 'styles/load';
+@import 'styles/abstract/abstract.styl';
+
+domino-height = 600;
+domino-width = 300;
+
+body
+  background-color: darkred;
+  color: black
+  font-family: 'Verdana', sans-serif;
+  a
+    color:gold
+
+
+  h1, h2, h3
+    font-family: 'Verdana', sans-serif;
+  
+
+#zen-intro > div, #zen-intro > header, .supporting > div, .sidebar > div, .requirements > p, footer
+    float: left;
+    @extends $rounded-corner;
+    height: unit(domino-height, 'px')
+    width: unit(domino-width, 'px')
+    @extends $borderb
+    background-color:white;
+    padding: 25px;
+    @extends $shadow;
+
+
+#zen-intro
+  @extends $full-width
+    
+  
+  header
+    @extends $quarter-width
+    @extends $left-margin
+    @extends $slant-right;
+    
+   
+   
+  .summary
+    margin-top: -5%;
+    margin-left: 5%;
+    @extends $slant-left;
+  
+  .preamble
+    margin-top: 20%;
+    margin-left: -10%;
+    @extends $slant-right;
+
+
+.requirements
+  p
+    margin-top: unit(domino-height/2*-1, 'px');
+    clear: none;
+    @extends $slant-left;
+    
+    &:nth-child(2)
+      margin-top: unit(50, 'px');
+      
+    &:nth-child(even){
+      background-color:black
+      color: white
+      @extends $slant-right;
+    }
+
+
+.sidebar
+  float: right;
+  @extends $slant-left
+  margin-top: unit(domino-height/2*-1, 'px');
+
+footer
+  margin-top: unit(domino-height, 'px');
+  margin-left: unit(domino-width, 'px');
+  @extends $nav-vert
+  a
+    background-color: black
+    color: white
+    squarify(50)
+    @extend $rounded-corner
+    &:hover
+      background-color: gold
+
+/*    
+.explanation, .participation
+    background-color:transwhite;
+    height: 450px;
+    @extends $rounded-corner
+    h-train-car-inline(45, 10, 10)
+
+.preamble
+  margin-bottom: 10%;
+
+.preamble >h3, .benefits >h3, .requirements>h3
+    @extends $oval
+    padding: 50px;
+    width: 30%;
+    background-color: white;
+    
+.benefits
+  @extends $half-width;
+  
+.requirements 
+  color: darkpurple;
+  //@extends $right;
+  @extends $three-quarter-width
+  float: right;
+  a
+    color: navy;
+
+.participation
+  float:right
+
+//#zen-supporting
+  
+//  > div > p
+//    stripe(red, white)
+
+aside.sidebar
+  @extends $full-width
+  @extends $text-center
+  background-color: darkness;
+  @extends $rounded-corner
+  clear: both
+  height: 700px;
+  a
+    color: navy;
+  
+  ul
+    padding: 0px //lets list items be centered
+    @extends $nav-vert
+    @extends $center-margin
+    li
+      @extends $rounded-corner
+      background-color: #ffcc99;
+      
+    
+#zen-resources
+
+
+#design-archives
+
+
+#design-selection
+
+.sidebar>.wrapper>div
+  h-train-car-inline(20, 70, 20)
+*/

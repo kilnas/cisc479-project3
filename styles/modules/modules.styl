@@ -91,12 +91,12 @@ $nav-horiz
      a:nth-child(1), li:nth-child(1) //special stuff for end bits
         margin-left: 0px
 
-$folded-corner
+folded-corner(color)
     position: relative;
-    background: pink; /* Fallback */
-    background: linear-gradient(-150deg, transparent 1.5em, pink 0);
+    background: color; /* Fallback */
+    background: linear-gradient(-150deg, transparent 1.5em, color 0);
     padding: 2em;
-    color: white;
+    color: black;
     border-radius: .5em;
     box-shadow: 0px 15px 10px -3px rgba(0,0,0,.5);
     &::before
@@ -117,7 +117,10 @@ $slant-left{
 
 $slant-right{
     vendorize(transform,rotate(10deg));
+}
 
+$shadow{
+    box-shadow: 0px 10px 10px -1px rgba(0,0,0,.5);
 }
 
 
@@ -131,11 +134,16 @@ $subtitle{
 }
 
 $teeny{
-    font-size: .4em;
+    font-size: .7em;
+    line-height: 1.1em;
 }
 
 $regular{
     font-size: 1em;
+}
+
+$regular-big{
+    font-size: 1.2em;
 }
 
 $huge{

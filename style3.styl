@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Molle:400italic');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
 @import 'styles/load';
 @import 'styles/abstract/abstract.styl';
 
 darkpurple=rgb(48,16,40);
 
 body
-  //font-family: 'Meie Script', cursive;
+  font-family: 'Libre Baskerville', serif;
   color: maroon
   a
     color:#5baef4
@@ -47,7 +48,7 @@ body
     
 .explanation, .participation
     background-color:transwhite;
-    height: 450px;
+    height: 550px;
     @extends $rounded-corner
     h-train-car-inline(45, 10, 10)
 
@@ -96,15 +97,9 @@ aside.sidebar
     li
       @extends $rounded-corner
       background-color: #ffcc99;
+      &:hover
+        background-color: purple;
       
-    
-#zen-resources
-
-
-#design-archives
-
-
-#design-selection
 
 .sidebar>.wrapper>div
   h-train-car-inline(20, 70, 20)

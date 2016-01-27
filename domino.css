@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css?family=Karla");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Alegreya+Sans+SC:400,700");
+#zen-intro > div,
+#zen-intro > header,
+.supporting > div,
+.sidebar > div,
+.requirements > p,
+footer {
+  border: 2px solid #000;
+  padding: 5px;
+}
+body {
+  font-family: 'Helvetica', sans-serif;
+  padding: 30px;
+}
+h1 {
+  font-size: 4em;
+  margin: 0;
+}
+h2 {
+  font-size: 3em;
+  margin: 0;
+}
+h3 {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1em;
+}
+div[role=presentation] {
+  display: none;
+}
+#zen-intro {
+  width: 100%;
+}
+#zen-intro header {
+  width: 25%;
+  padding: 10px;
+}
+#zen-intro header {
+  margin-left: 0;
+}
+#zen-intro > div,
+#zen-intro > header,
+.supporting > div,
+.sidebar > div,
+.requirements > p,
+footer,
+footer a {
+  border-radius: 10px;
+  padding: 10px;
+}
+footer {
+  float: left;
+  list-style: none;
+}
+footer >a,
+footer >li {
+  display: block;
+  margin-bottom: 5px;
+  background-color: #ffa500;
+  padding: 10px;
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+}
+footer >a:hover,
+footer >li:hover {
+  background-color: #008000;
+}
+#zen-intro .summary,
+.requirements p,
+.sidebar {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+#zen-intro header,
+#zen-intro .preamble,
+.requirements p:nth-child(even) {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+#zen-intro > div,
+#zen-intro > header,
+.supporting > div,
+.sidebar > div,
+.requirements > p,
+footer {
+  box-shadow: 0px 10px 10px -1px rgba(0,0,0,0.5);
+}
+#zen-intro > div,
+#zen-intro > header,
+.supporting > div,
+.sidebar > div,
+.requirements > p,
+footer {
+  border: 2px solid #000;
+  padding: 5px;
+}
+body {
+  background-color: #8b0000;
+  color: #000;
+  font-family: 'Verdana', sans-serif;
+}
+body a {
+  color: #ffd700;
+}
+body h1,
+body h2,
+body h3 {
+  font-family: 'Verdana', sans-serif;
+}
+#zen-intro > div,
+#zen-intro > header,
+.supporting > div,
+.sidebar > div,
+.requirements > p,
+footer {
+  float: left;
+  height: 600px;
+  width: 300px;
+  background-color: #fff;
+  padding: 25px;
+}
+#zen-intro .summary {
+  margin-top: -5%;
+  margin-left: 5%;
+}
+#zen-intro .preamble {
+  margin-top: 20%;
+  margin-left: -10%;
+}
+.requirements p {
+  margin-top: -300px;
+  clear: none;
+}
+.requirements p:nth-child(2) {
+  margin-top: 50px;
+}
+.requirements p:nth-child(even) {
+  background-color: #000;
+  color: #fff;
+}
+.sidebar {
+  float: right;
+  margin-top: -300px;
+}
+footer {
+  margin-top: 600px;
+  margin-left: 300px;
+}
+footer a {
+  background-color: #000;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+}
+footer a:hover {
+  background-color: #ffd700;
+}
+/*    
+.explanation, .participation
+    background-color:transwhite;
+    height: 450px;
+    @extends $rounded-corner
+    h-train-car-inline(45, 10, 10)
+
+.preamble
+  margin-bottom: 10%;
+
+.preamble >h3, .benefits >h3, .requirements>h3
+    @extends $oval
+    padding: 50px;
+    width: 30%;
+    background-color: white;
+    
+.benefits
+  @extends $half-width;
+  
+.requirements 
+  color: darkpurple;
+  //@extends $right;
+  @extends $three-quarter-width
+  float: right;
+  a
+    color: navy;
+
+.participation
+  float:right
+
+//#zen-supporting
+  
+//  > div > p
+//    stripe(red, white)
+
+aside.sidebar
+  @extends $full-width
+  @extends $text-center
+  background-color: darkness;
+  @extends $rounded-corner
+  clear: both
+  height: 700px;
+  a
+    color: navy;
+  
+  ul
+    padding: 0px //lets list items be centered
+    @extends $nav-vert
+    @extends $center-margin
+    li
+      @extends $rounded-corner
+      background-color: #ffcc99;
+      
+    
+#zen-resources
+
+
+#design-archives
+
+
+#design-selection
+
+.sidebar>.wrapper>div
+  h-train-car-inline(20, 70, 20)
+*/
