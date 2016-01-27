@@ -109,11 +109,6 @@ body {
 body a {
   color: #ffd700;
 }
-body h1,
-body h2,
-body h3 {
-  font-family: 'Verdana', sans-serif;
-}
 #zen-intro > div,
 #zen-intro > header,
 .supporting > div,
@@ -125,6 +120,9 @@ footer {
   width: 300px;
   background-color: #fff;
   padding: 25px;
+}
+#zen-intro header >h1 {
+  margin-bottom: 100px;
 }
 #zen-intro .summary {
   margin-top: -5%;
@@ -162,68 +160,3 @@ footer a {
 footer a:hover {
   background-color: #ffd700;
 }
-/*    
-.explanation, .participation
-    background-color:transwhite;
-    height: 450px;
-    @extends $rounded-corner
-    h-train-car-inline(45, 10, 10)
-
-.preamble
-  margin-bottom: 10%;
-
-.preamble >h3, .benefits >h3, .requirements>h3
-    @extends $oval
-    padding: 50px;
-    width: 30%;
-    background-color: white;
-    
-.benefits
-  @extends $half-width;
-  
-.requirements 
-  color: darkpurple;
-  //@extends $right;
-  @extends $three-quarter-width
-  float: right;
-  a
-    color: navy;
-
-.participation
-  float:right
-
-//#zen-supporting
-  
-//  > div > p
-//    stripe(red, white)
-
-aside.sidebar
-  @extends $full-width
-  @extends $text-center
-  background-color: darkness;
-  @extends $rounded-corner
-  clear: both
-  height: 700px;
-  a
-    color: navy;
-  
-  ul
-    padding: 0px //lets list items be centered
-    @extends $nav-vert
-    @extends $center-margin
-    li
-      @extends $rounded-corner
-      background-color: #ffcc99;
-      
-    
-#zen-resources
-
-
-#design-archives
-
-
-#design-selection
-
-.sidebar>.wrapper>div
-  h-train-car-inline(20, 70, 20)
-*/

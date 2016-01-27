@@ -1,0 +1,228 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  padding: 30px;
+}
+h1 {
+  font-size: 4em;
+  margin: 0;
+}
+h2 {
+  font-size: 3em;
+  margin: 0;
+}
+h3 {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1em;
+}
+div[role=presentation] {
+  display: none;
+}
+footer {
+  width: 100%;
+}
+#zen-summary {
+  float: left;
+}
+#zen-participation {
+  float: right;
+}
+body,
+#zen-summary,
+#zen-explanation,
+#zen-benefits {
+  text-align: center;
+}
+#zen-preamble,
+#zen-explanation {
+  text-align: left;
+}
+header {
+  text-align: right;
+}
+#design-selection li,
+#design-archives li,
+#zen-resources li,
+footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+#zen-summary,
+#zen-explanation,
+#zen-benefits {
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
+#zen-preamble,
+#zen-participation,
+#zen-requirements p {
+  border-radius: 10px;
+  padding: 10px;
+}
+#design-selection li,
+#design-archives li,
+#zen-resources li {
+  float: left;
+  list-style: none;
+}
+#design-selection li >a,
+#design-archives li >a,
+#zen-resources li >a,
+#design-selection li >li,
+#design-archives li >li,
+#zen-resources li >li {
+  display: block;
+  margin-bottom: 5px;
+  background-color: #ffa500;
+  padding: 10px;
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+}
+#design-selection li >a:hover,
+#design-archives li >a:hover,
+#zen-resources li >a:hover,
+#design-selection li >li:hover,
+#design-archives li >li:hover,
+#zen-resources li >li:hover {
+  background-color: #008000;
+}
+footer {
+  list-style: none;
+}
+footer >a,
+footer >li {
+  display: inline-block;
+  margin-left: 5px;
+  background-color: #ffa500;
+  padding: 10px;
+  width: 10%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+}
+footer >a:hover,
+footer >li:hover {
+  background-color: #008000;
+}
+footer >a:nth-child(1),
+footer >li:nth-child(1) {
+  margin-left: 0px;
+}
+header {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+#design-selection li {
+  font-size: 0.7em;
+  line-height: 1.1em;
+}
+#design-selection h3,
+#design-archives h3,
+#zen-resources h3 {
+  font-size: 1.2em;
+}
+header h1 {
+  font-size: 5em;
+}
+ul {
+  padding: 0px;
+}
+body {
+  color: #696969;
+}
+header {
+  text-transform: uppercase;
+  color: #fa8072;
+  margin-bottom: 15px;
+}
+#zen-summary {
+  width: 200px;
+  height: 200px;
+  padding: 50px;
+  background-color: #008080;
+  -webkit-background: linear-gradient(0deg, PaleGreen, MediumTurquoise);
+  -moz-background: linear-gradient(0deg, PaleGreen, MediumTurquoise);
+  -ms-background: linear-gradient(0deg, PaleGreen, MediumTurquoise);
+  background: linear-gradient(0deg, PaleGreen, MediumTurquoise);
+}
+#zen-preamble {
+  background-color: rebeccapurple;
+  color: #dcdcdc;
+}
+#zen-explanation {
+  display: inline-block;
+  margin-right: 0px;
+  width: 40%;
+  vertical-align: top;
+  padding: 5px;
+  background-color: #fffacd;
+  padding: 50px;
+}
+#zen-benefits {
+  background-color: #20b2aa;
+}
+#zen-participation {
+  display: block;
+  background-Color: #ffc0cb;
+  margin-bottom: 10px;
+  width: 50%;
+  list-style: none;
+}
+#zen-participation p {
+  display: inline-block;
+  margin-right: 0px;
+  width: 27%;
+  vertical-align: top;
+  padding: 0px;
+}
+#zen-requirements p {
+  display: inline-block;
+  margin-right: 0px;
+  width: 20%;
+  vertical-align: top;
+  padding: 15px;
+  background-color: #90ee90;
+}
+#design-selection li,
+#design-archives li,
+#zen-resources li {
+  display: block;
+  background-Color: #ffc0cb;
+  margin-bottom: 10px;
+  width: 100%;
+  list-style: none;
+}
+#design-selection li >a,
+#design-archives li >a,
+#zen-resources li >a,
+#design-selection li >li,
+#design-archives li >li,
+#zen-resources li >li {
+  background: #dda0cb;
+}
+#design-selection li >a:hover,
+#design-archives li >a:hover,
+#zen-resources li >a:hover,
+#design-selection li >li:hover,
+#design-archives li >li:hover,
+#zen-resources li >li:hover {
+  background: #ff7f50;
+}
+.wrapper>div {
+  display: inline-block;
+  margin-right: 20px;
+  width: 25%;
+  vertical-align: top;
+  padding: 5px;
+}
+footer >a:hover,
+footer >li:hover {
+  background: #7cfc00;
+}

@@ -1,0 +1,85 @@
+@import 'styles/load';
+@import 'styles/abstract/abstract.styl';
+
+
+ul
+  padding: 0;
+  
+body
+  color: dimgray
+  @extends $text-center;
+
+header
+  @extends $text-right;
+  @extends $slant-right;
+  text-transform: uppercase;
+  h1
+    @extends $huge;
+  color: salmon
+  margin-bottom: 15px;
+  
+#zen-summary
+  squarify(200)
+  padding: 50px
+  @extends $oval;
+  @extends $left;
+  background-color: teal;
+  gradient(0deg, PaleGreen , MediumTurquoise )
+  
+#zen-preamble
+  @extends $rounded-corner
+  background-color: rebeccapurple;
+  color: gainsboro
+  @extends $text-left
+
+#zen-explanation
+  @extends $text-left
+  h-train-car-inline(40,0,5)
+  @extends $oval
+  background-color: lemonchiffon
+  padding: 50px
+#zen-benefits
+  @extends $oval
+  background-color: lightseagreen
+
+#zen-participation
+  v-ladder-rung-block(50)
+  p
+    h-train-car-inline(27, 0,0)
+  @extends $rounded-corner
+  @extends $right
+  
+  
+#zen-requirements
+  p
+    h-train-car-inline(20,0,15)
+    background-color: lightgreen
+    @extends $rounded-corner
+  
+
+
+#design-selection, #design-archives, #zen-resources
+    h3
+      @extends $regular-big
+    li
+      @extends $center-margin
+      v-ladder-rung-block(100)
+      @extends $nav-vert
+      >a, >li
+        background: plum;
+        //@extends $borderb
+        &:hover
+          background: coral;
+#design-selection
+  li
+    @extends $teeny
+.wrapper>div
+  h-train-car-inline(25%, 20, 5)
+ 
+
+footer
+  @extends $nav-horiz;
+  @extends $center-margin;
+  >a, >li
+    &:hover
+      background: lawngreen;

@@ -1,0 +1,72 @@
+//note: import fonts before loading styles
+@import 'styles/load';
+@import 'styles/abstract/abstract.styl';
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+square-width = 100;
+navheight = 250;
+grurple = #6d586d;
+
+body
+  background-color: grurple;
+  @extends $grid-background;
+  color: #aeb4db
+  font-family: 'Karla', sans-serif;
+  p>a
+    @extends $petal
+    &:nth-child(odd)
+      border-radius: 50% 0
+    
+  h1, h2, h3
+    font-family: 'Pacifico', cursive;
+    
+.intro
+  margin-top: unit(navheight, 'px')
+
+
+.sidebar>.wrapper
+  @extends $full-width
+  div
+    float: right;
+    width: 20%;
+    //height: unit(navheight, 'px')
+
+  .design-resources
+    margin-right:0
+    
+  .design-selection
+    width: 100%
+    height: unit(navheight, 'px');
+    position: fixed;
+    left:0;
+    top:0;
+    gradient(75deg, lavender, pink)
+    color: grurple
+    
+    h3
+      text-align: center
+    nav
+      ul
+        @extends $nav-horiz
+        li
+          color: grurple;
+          gradient(75deg, pink, white)
+          width: 150px
+          margin-left: 20px;
+          margin-bottom: 20px;
+          border-radius: 0 50%;
+          &:nth-child(even)
+            border-radius: 50% 0;
+          //@extends $lemon //being overidden
+        a
+            color: grurple;
+            text-decoration: none;
+            
+footer
+  float: left
+  width: 50%
+  @extends $nav-horiz
+  a
+    border-radius: 50% 0
+    @extends $petal
+    margin-top: 20%;
